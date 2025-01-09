@@ -6,7 +6,7 @@
 - [ X ] Landlord page (static)
 - [ X ] My reservations (static)
 - [ X ] My properties (static)
-- [ ] Inbox page (static)
+- [ X ] Inbox page (static)
 - [ ] Detail page for chat (static)
 - [ ] User menu popup
 - [ ] Create reusable modal window
