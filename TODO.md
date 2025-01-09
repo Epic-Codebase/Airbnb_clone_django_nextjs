@@ -3,7 +3,7 @@
 - [ X ] Categories on the front page (static)
 - [ X ] List properties on the front page (static)
 - [ X ] Detail page for properties (static)
-- [ ] Landlord page (static)
+- [ X ] Landlord page (static)
 - [ ] My reservations (static)
 - [ ] My properties (static)
 - [ ] Inbox page (static)
