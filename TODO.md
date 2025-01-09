@@ -5,7 +5,7 @@
 - [ X ] Detail page for properties (static)
 - [ X ] Landlord page (static)
 - [ X ] My reservations (static)
-- [ ] My properties (static)
+- [ X ] My properties (static)
 - [ ] Inbox page (static)
 - [ ] Detail page for chat (static)
 - [ ] User menu popup
