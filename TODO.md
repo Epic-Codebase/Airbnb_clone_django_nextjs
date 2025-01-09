@@ -7,7 +7,7 @@
 - [ X ] My reservations (static)
 - [ X ] My properties (static)
 - [ X ] Inbox page (static)
-- [ ] Detail page for chat (static)
+- [ X ] Detail page for chat (static)
 - [ ] User menu popup
 - [ ] Create reusable modal window
 - [ ] Log in modal (remember error codes)
