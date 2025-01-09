@@ -4,7 +4,7 @@
 - [ X ] List properties on the front page (static)
 - [ X ] Detail page for properties (static)
 - [ X ] Landlord page (static)
-- [ ] My reservations (static)
+- [ X ] My reservations (static)
 - [ ] My properties (static)
 - [ ] Inbox page (static)
 - [ ] Detail page for chat (static)
