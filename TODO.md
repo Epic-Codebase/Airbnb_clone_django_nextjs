@@ -1,6 +1,6 @@
 - [ X ] Install and set up NextJS, create project
 - [ X ] Code for nav bar
-- [ ] Categories on the front page
+- [ X ] Categories on the front page (static)
 - [ ] List properties on the front page (static)
 - [ ] Detail page for properties (static)
 - [ ] Landlord page (static)
