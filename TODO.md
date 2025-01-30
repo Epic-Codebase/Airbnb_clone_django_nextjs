@@ -11,7 +11,7 @@
 - [ X ] User menu popup
 - [ X ] Create reusable modal window
 - [ X ] Log in modal (remember error codes)
-- [ ] Sign up modal (remember error codes)
+- [ X ] Sign up modal (remember error codes)
 
 - [ ] Set up docker for Django with PostgreSQL, etc
   - [ ] Install DRF, CORS Headers, etc
