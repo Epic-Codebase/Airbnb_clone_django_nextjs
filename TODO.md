@@ -8,7 +8,7 @@
 - [ X ] My properties (static)
 - [ X ] Inbox page (static)
 - [ X ] Detail page for chat (static)
-- [ ] User menu popup
+- [ X ] User menu popup
 - [ ] Create reusable modal window
 - [ ] Log in modal (remember error codes)
 - [ ] Sign up modal (remember error codes)
