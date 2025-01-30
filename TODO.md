@@ -13,7 +13,7 @@
 - [ X ] Log in modal (remember error codes)
 - [ X ] Sign up modal (remember error codes)
 
-- [ ] Set up docker for Django with PostgreSQL, etc
+- [ X ] Set up docker for Django with PostgreSQL, etc
   - [ ] Install DRF, CORS Headers, etc
 - [ ] Create user modal/config
 - [ ] Create app for properties
