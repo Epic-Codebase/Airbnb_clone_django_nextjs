@@ -9,8 +9,8 @@
 - [ X ] Inbox page (static)
 - [ X ] Detail page for chat (static)
 - [ X ] User menu popup
-- [ ] Create reusable modal window
-- [ ] Log in modal (remember error codes)
+- [ X ] Create reusable modal window
+- [ X ] Log in modal (remember error codes)
 - [ ] Sign up modal (remember error codes)
 
 - [ ] Set up docker for Django with PostgreSQL, etc
