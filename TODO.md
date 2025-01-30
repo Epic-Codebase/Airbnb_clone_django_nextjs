@@ -14,7 +14,7 @@
 - [ X ] Sign up modal (remember error codes)
 
 - [ X ] Set up docker for Django with PostgreSQL, etc
-  - [ ] Install DRF, CORS Headers, etc
+  - [ X ] Install DRF, CORS Headers, etc
 - [ ] Create user modal/config
 - [ ] Create app for properties
 - [ ] Create model and serializer for properties
