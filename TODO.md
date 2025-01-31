@@ -28,10 +28,10 @@
   - [ X ] Log in
   - [ X ] Log out
 
-- [ ] Add properties from NextJS
-  - [ ] Create modal
-  - [ ] API endpoint
-  - [ ] Send data
+- [ X ] Add properties from NextJS
+  - [ X ] Create modal
+  - [ X ] API endpoint
+  - [ X ] Send data
    
 - [ ] Detail page for properties
 - [ ] Book property
