@@ -21,11 +21,11 @@
 - [ X ] Create model and serializer for properties
 - [ X ] Get properties in the front end and list them
 
-- [ ] Create api service file (and use it in the properties list)
+- [ X ] Create api service file (and use it in the properties list)
 
 - [ ] Implement authentication
+  - [ X ] Sign up
   - [ ] Log in
-  - [ ] Sign up
   - [ ] Log out
 
 - [ ] Add properties from NextJS
