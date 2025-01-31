@@ -18,8 +18,10 @@
 - [ X ] Create user modal/config
 - [ X ] Configure DRF, CORS, etc
 - [ X ] Create app for properties
-- [ ]X  Create model and serializer for properties
-- [ ] Get properties in the front end and list them
+- [ X ] Create model and serializer for properties
+- [ X ] Get properties in the front end and list them
+
+- [ ] Create api service file (and use it in the properties list)
 
 - [ ] Implement authentication
   - [ ] Log in
