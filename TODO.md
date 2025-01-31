@@ -25,8 +25,8 @@
 
 - [ ] Implement authentication
   - [ X ] Sign up
-  - [ ] Log in
-  - [ ] Log out
+  - [ X ] Log in
+  - [ X ] Log out
 
 - [ ] Add properties from NextJS
   - [ ] Create modal
