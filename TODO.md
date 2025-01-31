@@ -15,7 +15,7 @@
 
 - [ X ] Set up docker for Django with PostgreSQL, etc
   - [ X ] Install DRF, CORS Headers, etc
-- [ ] Create user modal/config
+- [ X ] Create user modal/config
 - [ ] Create app for properties
 - [ ] Create model and serializer for properties
 - [ ] Get properties in the front end and list them
