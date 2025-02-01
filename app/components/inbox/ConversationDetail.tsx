@@ -11,19 +11,21 @@ interface ConversationDetailProps {
     conversation: ConversationType;
     userId: string;
     token: string;
+    messages: MessageType[];
 }
 
 const ConversationDetail: React.FC<ConversationDetailProps> = ({
     conversation,
     userId,
-    token
+    token,
+    messages
 }) => {
     const messagesDiv = useRef(null);
     const [newMessage, setNewMessage] = useState('');
     const myUser = conversation.users?.find((user) => user.id == userId)
     const otherUser = conversation.users?.find((user) => user.id != userId)
     const [realtimeMessages, setRealtimeMessages] = useState<MessageType[]>([]);
-
+    console.log("messages", messages)
     const { sendJsonMessage, lastJsonMessage, readyState } = useWebSocket(`ws://127.0.0.1:8000/ws/${conversation.id}/?token=${token}`, {
         share: false,
         shouldReconnect: () => true,
@@ -59,7 +61,7 @@ const ConversationDetail: React.FC<ConversationDetailProps> = ({
             event: 'chat_message',
             data: {
                 body: newMessage,
-                name: 'John', //myUser?.name,
+                name: myUser?.name,
                 sent_to_id: otherUser?.id,
                 conversation_id: conversation.id
             }
@@ -84,15 +86,26 @@ const ConversationDetail: React.FC<ConversationDetailProps> = ({
             ref={messagesDiv}
             className="max-h-[400px] overflow-auto flex flex-col space-y-4"
         >
-            {realtimeMessages.map((message, index) => (
+            
+            {messages.map((message, index) => (
                 <div 
                     key={index}
-                    className={`w-[80%] py-4 px-6 rounded-xl ${message.name === myUser?.name ? 'ml-[20%] bg-blue-200' : 'bg-gray-200'}`}
+                    className={`w-[80%] py-4 px-6 rounded-xl ${message.created_by.name === myUser?.name ? 'ml-[20%] bg-blue-200' : 'bg-gray-200'}`}
                 >
-                    <p className="font-bold text-gray-500">{message.name}</p>
+                    <p className="font-bold text-gray-500">{message.created_by.name}</p>
                     <p>{message.body}</p>
                 </div>
             ))}
+
+            {realtimeMessages.map((message, index) => (
+                <div 
+                    key={index}
+                    className={`w-[80%] py-4 px-6 rounded-xl ${message.created_by.name === myUser?.name ? 'ml-[20%] bg-blue-200' : 'bg-gray-200'}`}
+                >
+                    <p className="font-bold text-gray-500">{message.created_by.name}</p>
+                    <p>{message.body}</p>
+                </div>
+            ))}     
         </div>
 
         <div className="mt-4 py-4 px-6 flex border border-gray-300 space-x-4 rounded-xl">

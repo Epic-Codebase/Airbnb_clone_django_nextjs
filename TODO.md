@@ -49,7 +49,7 @@
   - [ X ] Set up routing
 - [ X ] Make it possible to connect
 - [ X ] Send/receive messages
-- [ ] Store and load messages
+- [ X ] Store and load messages
 - [ ] Start new conversation
 
 - [ ] Set up search filters
