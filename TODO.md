@@ -39,7 +39,7 @@
 - [ X ] My properties dynamic
 - [ X ] My reservations dynamic
 - [ X ] Make it possible to set property as favorite
-- [ ] My favorites page (with listing)
+- [ X ] My favorites page (with listing)
 - [ ] Make conversations dynamic
 
 - [ ] Set up web sockets in the backend
