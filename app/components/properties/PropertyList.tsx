@@ -6,15 +6,27 @@ import apiService from "@/app/services/apiService";
 
 export type PropertyType = {
     id: string;
-    title: string;
-    price_per_night: number;
+    title: string;    
     image_url: string;
+    price_per_night: number;
 }
 
-const PropertyList = () => {
+interface PropertyListProps {
+    landlord_id?: string | null;
+}
+
+const PropertyList: React.FC<PropertyListProps> = ({
+    landlord_id
+}) => {
     const [properties, setProperties] = useState<PropertyType[]>([]);
     const getProperties = async () => {
-        const tmpProperties = await apiService.get('/api/properties/')
+        let url = '/api/properties/';
+
+        if (landlord_id) {
+            url += `?landlord_id=${landlord_id}`
+        }
+
+        const tmpProperties = await apiService.get(url)
 
         setProperties(tmpProperties.data);
     };
