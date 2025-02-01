@@ -33,7 +33,7 @@
   - [ X ] API endpoint
   - [ X ] Send data
    
-- [ ] Detail page for properties
+- [ X ] Detail page for properties
 - [ ] Book property
 - [ ] Land lord page dynamic
 - [ ] My properties dynamic
