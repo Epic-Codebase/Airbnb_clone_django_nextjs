@@ -38,7 +38,7 @@
 - [ X ] Land lord page dynamic
 - [ X ] My properties dynamic
 - [ X ] My reservations dynamic
-- [ ] Make it possible to set property as favorite
+- [ X ] Make it possible to set property as favorite
 - [ ] My favorites page (with listing)
 - [ ] Make conversations dynamic
 
