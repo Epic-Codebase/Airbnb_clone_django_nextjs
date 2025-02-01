@@ -47,7 +47,7 @@
   - [ X ] Configuration
   - [ X ] Set up basic consumers
   - [ X ] Set up routing
-- [ ] Make it possible to connect
+- [ X ] Make it possible to connect
 - [ ] Send/receive messages
 - [ ] Store and load messages
 - [ ] Start new conversation
