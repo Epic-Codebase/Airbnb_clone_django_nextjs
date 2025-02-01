@@ -42,7 +42,11 @@
 - [ X ] My favorites page (with listing)
 - [ X ] Make conversations dynamic
 
-- [ ] Set up web sockets in the backend
+- [ X ] Set up web sockets in the backend
+  - [ X ] Installing software
+  - [ X ] Configuration
+  - [ X ] Set up basic consumers
+  - [ X ] Set up routing
 - [ ] Make it possible to connect
 - [ ] Send/receive messages
 - [ ] Store and load messages
