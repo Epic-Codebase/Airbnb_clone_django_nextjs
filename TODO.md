@@ -64,7 +64,7 @@
 - [ X ] Fix the refresh token
 
 - [ ] Deployment
-  - [ ] Setting up git (github)
+  - [ X ] Setting up git (github)
   - [ ] Create a server on digital ocean and set it up
   - [ ] Backend
     - [ ] Create environment
