@@ -60,7 +60,8 @@
   - [ X ] API endpoint
   - [ X ] Choose between categories on the front page
 
-- [ ] Refresh front page automatically
+- [ X ] Refresh front page automatically
+- [ X ] Fix the refresh token
 
 - [ ] Deployment
   - [ ] Setting up git (github)
