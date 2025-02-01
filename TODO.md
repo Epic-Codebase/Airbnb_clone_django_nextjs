@@ -50,15 +50,17 @@
 - [ X ] Make it possible to connect
 - [ X ] Send/receive messages
 - [ X ] Store and load messages
-- [ ] Start new conversation
+- [ X ] Start new conversation
 
-- [ ] Set up search filters
-  - [ ] Modal for search filter
-  - [ ] Country search
-  - [ ] Calendar for check in/check out dates
-  - [ ] Search details (number of guests, bedrooms, etc)
-  - [ ] API endpoint
-  - [ ] Choose between categories on the front page
+- [ X ] Set up search filters
+  - [ X ] Modal for search filter
+  - [ X ] Country search
+  - [ X ] Calendar for check in/check out dates
+  - [ X ] Search details (number of guests, bedrooms, etc)
+  - [ X ] API endpoint
+  - [ X ] Choose between categories on the front page
+
+- [ ] Refresh front page automatically
 
 - [ ] Deployment
   - [ ] Setting up git (github)
