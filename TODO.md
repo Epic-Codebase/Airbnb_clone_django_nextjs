@@ -34,7 +34,7 @@
   - [ X ] Send data
    
 - [ X ] Detail page for properties
-- [ ] Book property
+- [ X ] Book property
 - [ ] Land lord page dynamic
 - [ ] My properties dynamic
 - [ ] My reservations dynamic
