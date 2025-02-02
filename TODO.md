@@ -65,11 +65,12 @@
 
 - [ ] Deployment
   - [ X ] Setting up git (github)
-  - [ ] Create a server on digital ocean and set it up
-  - [ ] Backend
-    - [ ] Create environment
-    - [ ] Get code from git
-    - [ ] Rest of server stuff
+  - [ X ] Create a server on digital ocean and set it up
+  - [ X ] Backend
+    - [ X ] Install docker compose
+    - [ X ] Set up docker compose file for prod
+    - [ X ] Get code from git
+    - [ X ] Rest of server stuff
   - [ ] Frontend
     - [ ] Node, nginx
     - [ ] Get code from git
