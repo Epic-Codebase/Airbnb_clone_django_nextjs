@@ -4,8 +4,8 @@ import PropertyList from "@/app/components/properties/PropertyList"
 import apiService from "@/app/services/apiService"
 import { getUserId } from "@/app/lib/actions"
 
-const LandlordDetailPage = async ({params} : {params: {id: string}}) => {
-    const landlord = await apiService.get(`/api/auth/${params.id}`);
+const LandlordDetailPage = async (props: { params: Promise<{ id: string }> }) => {
+    const landlord = await apiService.get(`/api/auth/${await props.params}`);
     const userId = await getUserId();
 
     return (
