@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import PropertyList from "../components/properties/PropertyList";
 import { getUserId } from "../lib/actions";
 
@@ -17,9 +18,11 @@ const MyFavoritesPage = async () => {
             <h1 className="my-6 text-2xl">My favorites</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <PropertyList 
-                    favorites={true}
-                />
+                <Suspense>
+                    <PropertyList 
+                        favorites={true}
+                    />
+                </Suspense>                
             </div>      
         </main>
     )

@@ -3,9 +3,10 @@ import ContactButton from "@/app/components/ContactButton"
 import PropertyList from "@/app/components/properties/PropertyList"
 import apiService from "@/app/services/apiService"
 import { getUserId } from "@/app/lib/actions"
+import { Suspense } from "react"
 
 const LandlordDetailPage = async (props: { params: Promise<{ id: string }> }) => {
-    const params = await props.params
+    const params = await props.params;
     const landlord = await apiService.get(`/api/auth/${params.id}`);
     const userId = await getUserId();
 
@@ -35,9 +36,11 @@ const LandlordDetailPage = async (props: { params: Promise<{ id: string }> }) =>
 
                 <div className="col-span-1 md:col-span-3 pl-0 md:pl-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <Suspense>
                         <PropertyList 
                             landlord_id={params.id}
                         />
+                    </Suspense>                        
                     </div>      
                 </div>
             </div>

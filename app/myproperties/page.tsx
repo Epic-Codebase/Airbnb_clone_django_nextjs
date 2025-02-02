@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import PropertyList from "../components/properties/PropertyList"
 
 import { getUserId } from "../lib/actions"
@@ -11,9 +12,11 @@ const MyPropertiesPage = async () => {
             <h1 className="my-6 text-2xl">My properties</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Suspense>
                 <PropertyList 
                     landlord_id={userId}
                 />
+            </Suspense>
             </div>      
         </main>
     )

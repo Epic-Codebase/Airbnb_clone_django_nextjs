@@ -17,11 +17,11 @@ export async function handleRefrehs() {
         }
     })
     .then(response => response.json())
-    .then((json) => {
+    .then(async (json) => {
         console.log("Response - Refresh:", json)
 
         if (json.access) {
-            cookies().set('session_access_token', json.access, {
+            (await cookies()).set('session_access_token', json.access, {
                 httpOnly: true,
                 secure: process.env.NODE_ENV === 'production',
                 maxAge: 60 * 60,
