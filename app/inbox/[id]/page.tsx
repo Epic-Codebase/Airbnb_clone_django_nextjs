@@ -14,7 +14,7 @@ export type MessageType = {
     created_by: UserType
 }
 
-const ConversationPage = async ({params}: {params: {id: string}}) => {
+const ConversationPage = async ({ params }: { params: {id: string }}) => {
     const userId = await getUserId();
     const token = await getAccessToken();
     
