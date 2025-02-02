@@ -14,13 +14,7 @@ export type MessageType = {
     created_by: UserType
 }
 
-interface PageProps {
-    params: {
-      id: string;
-    };
-}
-
-const ConversationPage = async ({ params }: PageProps) => {
+const ConversationPage = async (props: { params: Promise<{ id: string }> }) => {
     const userId = await getUserId();
     const token = await getAccessToken();
     
@@ -32,7 +26,7 @@ const ConversationPage = async ({ params }: PageProps) => {
         )
     }
 
-    const conversation = await apiService.get(`/api/chat/${params.id}`)
+    const conversation = await apiService.get(`/api/chat/${await props.params}`)
 
     return (
         <main className="max-w-[1500px] mx-auto px-6 pb-6">
