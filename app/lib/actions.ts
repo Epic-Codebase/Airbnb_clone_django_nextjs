@@ -23,7 +23,7 @@ export async function handleRefrehs() {
         if (json.access) {
             (await cookies()).set('session_access_token', json.access, {
                 httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
+                secure: false,
                 maxAge: 60 * 60,
                 path: '/'
             });
@@ -45,21 +45,21 @@ export async function handleRefrehs() {
 export async function handleLogin(userId: string, accessToken: string, refreshToken: string) {
     (await cookies()).set('session_userid', userId, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
+        secure: false,
         maxAge: 60 * 60 * 24 * 7, // One week
         path: '/'
     });
 
     (await cookies()).set('session_access_token', accessToken, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
+        secure: false,
         maxAge: 60 * 60,
         path: '/'
     });
 
     (await cookies()).set('session_refresh_token', refreshToken, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
+        secure: false,
         maxAge: 60 * 60 * 24 * 7, // One week
         path: '/'
     });
