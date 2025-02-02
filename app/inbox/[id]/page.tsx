@@ -15,6 +15,7 @@ export type MessageType = {
 }
 
 const ConversationPage = async (props: { params: Promise<{ id: string }> }) => {
+    const params = await props.params;
     const userId = await getUserId();
     const token = await getAccessToken();
     
@@ -26,7 +27,7 @@ const ConversationPage = async (props: { params: Promise<{ id: string }> }) => {
         )
     }
 
-    const conversation = await apiService.get(`/api/chat/${await props.params}`)
+    const conversation = await apiService.get(`/api/chat/${params.id}`)
 
     return (
         <main className="max-w-[1500px] mx-auto px-6 pb-6">
