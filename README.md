@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# djangobnb
 
-## Getting Started
+## Overview
+A full-stack Airbnb clone using Next.js and Django.
 
-First, run the development server:
+This project is a full-stack Airbnb clone built using **Next.js (React)** for the frontend and **Django** for the backend.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+- 🔍 **Navigation** (Search & User Navigation)
+- 🏖 **Categories** (Beach, Villas, Cabins, Tiny Homes, etc.)
+- 🔑 **User Authentication** (Login/Signup)
+- 💬 **Chat System** (Inbox & Messaging)
+- 📅 **Reservations** (Manage bookings & reservations)
+- 🏡 **Property Management** (List & Manage Properties)
+- 📡 **Backend API** (Connects to Django backend using JSON endpoints)
+
+## Tech Stack
+### Frontend (Next.js)
+- React + Next.js
+- Tailwind CSS for styling
+- TypeScript support
+
+### Backend (Django)
+- Django REST Framework for API endpoints
+- PostgreSQL for database storage
+- Authentication using Django's built-in system
+
+## Installation & Setup
+
+### Prerequisites
+Ensure you have the following installed:
+- **Node.js** (v16+ recommended)
+- **Python** (3.8+ recommended)
+- **PostgreSQL** (if using a database)
+
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/Epic-Codebase/Airbnb_clone_django_nextjs.git
+cd Airbnb_clone_django_nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Frontend (Next.js)
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3️⃣ Run the project
+```sh
+npm run dev
+```
 
-## Learn More
+## Packages Used & Their Significance
 
-To learn more about Next.js, take a look at the following resources:
+### **Next.js & React**
+- **next** – Framework for server-rendered React applications.  
+- **react** – Core library for building UI components.  
+- **react-dom** – Provides React DOM bindings for rendering components in the browser.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Styling**
+- **tailwindcss** – Utility-first CSS framework for styling.  
+- **postcss** – A tool to process CSS with plugins like Tailwind.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **State Management & Utilities**
+- **zustand** – Lightweight state management for React.  
 
-## Deploy on Vercel
+### **Backend Communication**
+- React Router  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Authentication & Security**
+- Managed via Backend APIs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Development & Build Tools**
+- **typescript** – Provides static type checking for better development experience.  
+
+### **Other Utilities**
+- **react-date-range** – A date range picker component.  
+- **react-select** – Customizable select dropdown component.  
+- **react-use-websocket** – WebSocket hooks for real-time communication.  
+- **socket.io** & **socket.io-client** – Enables real-time bidirectional communication (likely for chat).  
+- **world-countries** – Provides country-related data for forms or filters.  
+- **@types/node**, **@types/react**, **@types/react-date-range**, **@types/react-dom** – TypeScript type definitions for better development.  
+
+
+### License
+This project is licensed under the Apache License.
+
+---
+
+_Enjoy building your Airbnb clone!_ 🚀
